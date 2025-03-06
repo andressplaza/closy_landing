@@ -12,11 +12,9 @@
   .header-legal {
     grid-area: header;
     padding: 10px 20px;
-    background-color: #f8f8f8;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Alinea el contenido hacia la izquierda */
-    position: relative;
+    justify-content: flex-start;
   }
   
   .leftSide-legal {
@@ -27,7 +25,6 @@
     grid-area: body;
     max-width: 800px;
     margin: auto;
-    font-family: Arial, sans-serif;
   }
   
   .rightSide-legal {
@@ -114,7 +111,6 @@
         .body-legal {
           max-width: 100%; /* La columna central debe ocupar todo el ancho disponible */
           padding: 20px;
-          font-family: Arial, sans-serif;
       }
       
   }

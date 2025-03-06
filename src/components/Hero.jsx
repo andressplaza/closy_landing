@@ -50,7 +50,7 @@ const Hero = () => {
           <a href="/politica-privacidad" className="footer__link">
             Política de privacidad
           </a>
-          <a href="#" className="footer__link">
+          <a href="/eliminar-cuenta" className="footer__link">
             Eliminar mi cuenta
           </a>
         </div>

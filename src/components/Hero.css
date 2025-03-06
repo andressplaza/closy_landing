@@ -103,7 +103,14 @@ text-align: center;
   width: 100%;
   max-width: 300px;
   height: auto;
+  box-shadow: 15px 20px 30px rgba(0, 0, 0, 0.2); /* Ajusta los valores */
+  border-radius: 56px; /* Opcional: suaviza los bordes */
 }
+
+.hero__iphone {
+  box-shadow: 20px 30px 50px rgba(0, 0, 0, 0.2); /* Ajusta según necesites */
+}
+
 
 
 
