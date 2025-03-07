@@ -1,5 +1,5 @@
 import React from 'react';
-import iphone from '@/assets/iphone.svg';
+import iphone from '@/assets/iphone.png';
 import titleLogo from '@/assets/closy-h1.svg';
 import androidLogo from '@/assets/android.svg';
 import appleLogo from '@/assets/apple.svg';
