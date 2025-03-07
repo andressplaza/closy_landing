@@ -47,15 +47,10 @@
 
 .hero__text {
   flex: 1;
-  padding-right: 20px;
   display: flex;
-  /* Activa Flexbox */
   flex-direction: column;
-  /* Alinea los hijos en fila */
   justify-content: center;
-  /* Centra horizontalmente los elementos */
   align-items: center;
-  /* Centra verticalmente los elementos */
 }
 
 
@@ -76,25 +71,35 @@
 
 .hero__buttons {
   display: flex;
+  justify-content: center; /* Alinea los botones al centro */
   gap: 12px;
+  flex-wrap: wrap; /* Permite que los botones se acomoden en varias líneas si es necesario en pantallas pequeñas */
 }
 
 .hero__button {
   display: flex;
   align-items: center;
+  justify-content: center; /* Asegura que el texto y los iconos estén centrados */
   gap: 8px;
-  /* Opcional, para separar icono y texto */
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 12px 24px; /* Asegura que los botones tengan el mismo tamaño */
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  flex-grow: 1; /* Hace que los botones crezcan de manera proporcional si el contenedor es más grande */
+  max-width: 250px; /* Limita el tamaño máximo del botón */
+  text-align: center; /* Centra el texto dentro del botón */
+  box-sizing: border-box; /* Incluye el padding en el tamaño total del botón */
 }
 
 .hero__button--light {
   background-color: #fff;
   color: #111111;
   border: 1px solid #ddd;
+}
+
+.hero__store-logo {
+  width: 24px; /* Establece un tamaño fijo para los iconos */
+  height: auto; /* Mantiene la relación de aspecto */
 }
 
 .hero__phone {
@@ -110,24 +115,30 @@
   filter: drop-shadow(15px 30px 25px rgba(0, 0, 0, 0.6));
 }
 
-/* Footer estilos */
-.footer__left {
-  font-size: 1rem;
-  color: black;
-  font-weight: lighter;
+.footer {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos de izquierda y derecha */
+  align-items: center; /* Alineación vertical centrada */
 }
+
 
 .footer__right {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Los enlaces se acomoden en varias líneas si es necesario */
+  justify-content: center;
 }
 
 .footer__link {
-  text-decoration: underline;
-  color: inherit;
-  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+.footer__link:hover {
+  text-decoration:underline;
+}
+
 
 @media (max-width: 768px) {
   .hero__content {
@@ -146,7 +157,6 @@
   .layout {
     grid:
       "header header header" 5%
-      /* Header más pequeño */
       "leftSide body rightSide" 1fr "footer footer footer" 15% / auto 1fr auto;
   }
 
@@ -163,13 +173,23 @@
   }
 
   .footer {
-    padding: 2rem;
-    flex-direction: column;
-    gap: 10px;
+    padding: 20px 20px; /* Ajusta el padding en pantallas más pequeñas */
+    flex-direction: column; /* Cambia la dirección a columna para apilar los elementos */
+    align-items: center; /* Centra todo el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 5px;
+  }
+
+  .footer__left {
+    order: 3; /* Pone el texto "Closy - 2025" al final */
+    margin-top: 10px; /* Ajusta el margen superior */
   }
 
   .footer__right {
-    justify-content: center;
+    flex-direction: row; /* Cambia a columna para que los enlaces se apilen */
+    gap: 20px; /* Reduce el espacio entre los enlaces */
+    order: 1; /* Coloca los enlaces arriba */
+    text-decoration:underline; 
   }
 
 }

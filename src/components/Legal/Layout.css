@@ -1,117 +1,131 @@
 .layout-legal {
+  width: 100%;
+  display: grid;
+  grid:
+    "header header header" auto "leftSide body rightSide" 1fr "footer footer footer" auto / 25% 1fr 25%;
+  gap: 8px;
+}
+
+.header-legal {
+  grid-area: header;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.leftSide-legal {
+  grid-area: leftSide;
+}
+
+.body-legal {
+  grid-area: body;
+  max-width: 800px;
+  margin: auto;
+}
+
+.rightSide-legal {
+  grid-area: rightSide;
+}
+
+.footer-legal {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f5f5f5;
+}
+
+.footer__left-legal {
+  font-weight: bold;
+}
+
+.footer__right-legal {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__link-legal {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer__link-legal:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para el botón de la flecha con Font Awesome */
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  /* Usamos flex para alinear el icono de manera adecuada */
+  align-items: center;
+  /* Alinea el icono verticalmente */
+  justify-content: center;
+  /* Centra el icono */
+}
+
+.back-button:hover {
+  color: #007bff;
+  transform: scale(1.1);
+  /* Efecto de zoom suave al pasar el mouse */
+}
+
+.back-button:focus {
+  outline: none;
+  /* Quita el borde al hacer clic */
+}
+
+.back-button i {
+  color: black;
+  /* Cambia el color del icono a negro */
+}
+
+/* Responsivo: en pantallas pequeñas, la flecha debe ser más grande */
+@media (max-width: 768px) {
+  .back-button {
+    font-size: 24px;
+    padding: 12px;
+  }
+
+  .layout-legal {
+    grid:
+      "header header header" 5%
+      "leftSide body rightSide" 1fr "footer footer footer" 15% / auto 1fr auto;
+  }
+
+
+  .back-button {
+    font-size: 24px;
+    padding: 12px;
+  }
+
+  .layout-legal {
     width: 100%;
     display: grid;
-    grid:
-      "header header header" auto
-      "leftSide body rightSide" 1fr
-      "footer footer footer" auto
-      / 25% 1fr 25%;
-    gap: 8px;
+    grid-template-columns: 1fr;
+    /* Cambié a una sola columna en pantallas pequeñas */
+    grid-template-rows: auto 1fr auto;
+    /* Mantengo la estructura de filas */
+    gap: 16px;
   }
-  
-  .header-legal {
-    grid-area: header;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  .leftSide-legal {
-    grid-area: leftSide;
-  }
-  
-  .body-legal {
-    grid-area: body;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .rightSide-legal {
-    grid-area: rightSide;
-  }
-  
-  .footer-legal {
-    grid-area: footer;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background: #f5f5f5;
-  }
-  
-  .footer__left-legal {
-    font-weight: bold;
-  }
-  
-  .footer__right-legal {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .footer__link-legal {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .footer__link-legal:hover {
-    text-decoration: underline;
-  }
-  
-  /* Estilo para el botón de la flecha con Font Awesome */
-  .back-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 10px;
-    color: #333;
-    transition: color 0.3s ease, transform 0.2s ease;
-    display: inline-flex; /* Usamos flex para alinear el icono de manera adecuada */
-    align-items: center; /* Alinea el icono verticalmente */
-    justify-content: center; /* Centra el icono */
-  }
-  
-  .back-button:hover {
-    color: #007bff;
-    transform: scale(1.1); /* Efecto de zoom suave al pasar el mouse */
-  }
-  
-  .back-button:focus {
-    outline: none; /* Quita el borde al hacer clic */
-  }
-  
-  .back-button i { 
-    color: black; /* Cambia el color del icono a negro */
-  }
-  /* Responsivo: en pantallas pequeñas, la flecha debe ser más grande */
-  @media (max-width: 768px) {
-    .back-button {
-      font-size: 24px;
-      padding: 12px;
-    }
 
-        .back-button {
-          font-size: 24px;
-          padding: 12px;
-        }
-      
-        .layout-legal {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr; /* Cambié a una sola columna en pantallas pequeñas */
-            grid-template-rows: auto 1fr auto; /* Mantengo la estructura de filas */
-            gap: 16px;
-          }
-      
-        .leftSide-legal,
-        .rightSide-legal {
-          display: none; /* Ocultar las columnas laterales en pantallas pequeñas */
-        }
-      
-        .body-legal {
-          max-width: 100%; /* La columna central debe ocupar todo el ancho disponible */
-          padding: 20px;
-      }
-      
+  .leftSide-legal,
+  .rightSide-legal {
+    display: none;
+    /* Ocultar las columnas laterales en pantallas pequeñas */
   }
-  
+
+  .body-legal {
+    max-width: 100%;
+    /* La columna central debe ocupar todo el ancho disponible */
+    padding: 20px;
+  }
+
+}
