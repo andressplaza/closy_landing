@@ -47,7 +47,7 @@ const Hero = () => {
           <a href="/terminos-condiciones" className="footer__link">
             Términos y condiciones
           </a>
-          <a href="/politica-privacidad" className="footer__link">
+          <a href="/privacidad" className="footer__link">
             Política de privacidad
           </a>
           <a href="/eliminar-cuenta" className="footer__link">

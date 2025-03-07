@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+        <Route path="/privacidad" element={<PoliticaPrivacidad />} />
         <Route path="/terminos-condiciones" element={<TerminosCondiciones />} />
         <Route path="/eliminar-cuenta" element={<EliminarCuenta />} />
       </Routes>
