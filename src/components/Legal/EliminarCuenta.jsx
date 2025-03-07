@@ -15,9 +15,9 @@ const EliminarCuenta = () => {
                 <p className="important-text">Importante: Esta acción no se puede deshacer.</p>
                 <button className="delete-button">Solicitar eliminación</button>
                 <div className="footer-links">
-                    <a href="/terms">Términos y condiciones</a> |
-                    <a href="/privacy">Política de privacidad</a> |
-                    <a href="/delete-account">Eliminar mi cuenta</a>
+                    <a href="/terminos-condiciones">Términos y condiciones</a> |
+                    <a href="/privacidad">Política de privacidad</a> |
+                    <a href="/eliminar-cuenta">Eliminar mi cuenta</a>
                 </div>
             </div>
         </Layout>
