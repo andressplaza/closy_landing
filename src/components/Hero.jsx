@@ -42,7 +42,7 @@ const Hero = () => {
       <div className="rightSide"></div>
       
       <div className="footer">
-        <div className="footer__left">Closy - 2025</div>
+        <div className="footer__left">Vesty - 2025</div>
         <div className="footer__right">
           <a href="/terminos-condiciones" className="footer__link">
             Términos y condiciones

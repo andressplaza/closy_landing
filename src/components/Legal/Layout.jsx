@@ -3,6 +3,7 @@ import './Layout.css'; // Asegúrate de que el CSS esté bien importado
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
 const Layout = ({ children }) => {
     const navigate = useNavigate(); // Inicializamos useNavigate para la navegación
 

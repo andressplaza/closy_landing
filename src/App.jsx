@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
 import Hero from './components/Hero';
 import PoliticaPrivacidad from './components/Legal/PoliticaPrivacidad';
 import TerminosCondiciones from './components/Legal/TerminosCondiciones';

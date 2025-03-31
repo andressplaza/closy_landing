@@ -1,14 +1,16 @@
 import Layout from './Layout';
 import './EliminarCuenta.css'; // Asegúrate de crear y enlazar correctamente este archivo CSS
+import vestyLegal from '../../assets/vesty-legal.png';
+
 
 const EliminarCuenta = () => {
     return (
         <Layout>
             <div className="delete-account-container">
-                <h1 className="title">Closy</h1>
+                <img src={vestyLegal} alt="Logo Vesty Legal" className="logo-legal" />
                 <h2 className="subtitle">Te echaremos de menos</h2>
                 <p className="description">
-                    Si quieres borrar tu cuenta y todos tus datos de Closy, solo necesitas ingresar tu correo abajo. 
+                    Si quieres borrar tu cuenta y todos tus datos de Closy, solo necesitas ingresar tu correo abajo.
                     Te enviaremos un mail de confirmación para asegurarnos de que realmente quieres hacerlo.
                 </p>
                 <input type="email" className="email-input" placeholder="Correo electrónico" />

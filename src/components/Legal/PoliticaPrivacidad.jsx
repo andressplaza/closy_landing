@@ -1,9 +1,12 @@
 import React from 'react';
 import Layout from './Layout';
+import vestyLegal from '../../assets/vesty-legal.png';
+
 
 const PoliticaPrivacidad = () => {
   return (
     <Layout>
+      <img src={vestyLegal} alt="Logo Vesty Legal" className="logo-legal" />
       <h1>Política de Privacidad</h1>
       <p>En Closy valoramos tu privacidad y nos comprometemos a proteger tus datos personales. Esta Política explica cómo recopilamos, usamos y protegemos tu información cuando utilizas nuestra aplicación.</p>
 
