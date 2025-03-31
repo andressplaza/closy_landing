@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="body">
         <div className="hero__content">
           <div className="hero__text">
-            <img src={titleLogo} alt="Closy" className="hero__logo" />
+            <img src={titleLogo} alt="Vesty" className="hero__logo" />
             <p className="hero__subtitle">
               Encuentra el Outfit <strong>perfecto</strong> sin siquiera probártelo.
             </p>
@@ -49,9 +49,6 @@ const Hero = () => {
           </a>
           <a href="/privacidad" className="footer__link">
             Política de privacidad
-          </a>
-          <a href="/eliminar-cuenta" className="footer__link">
-            Eliminar mi cuenta
           </a>
         </div>
       </div>

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Hero from './components/Hero';
-import PoliticaPrivacidad from './components/Legal/PoliticaPrivacidad';
-import TerminosCondiciones from './components/Legal/TerminosCondiciones';
-import EliminarCuenta from './components/Legal/EliminarCuenta';
+import Hero from './components/Hero/Hero';
+import PoliticaPrivacidad from './components/Legal/Politica/PoliticaPrivacidad';
+import TerminosCondiciones from './components/Legal/Terminos/TerminosCondiciones';
+import EliminarCuenta from './components/Legal/EliminarCuenta/EliminarCuenta';
 import 'font-awesome/css/font-awesome.min.css';
 
 
