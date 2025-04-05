@@ -53,7 +53,7 @@ const PoliticaPrivacidad = () => {
         <li>Oposición al uso de tus datos.</li>
       </ul>
       <p>Puedes ejercer estos derechos escribiéndonos a:</p>
-      <p><strong>privacidad@closyapp.com</strong></p>
+      <p><strong>vestyappes@gmail.com</strong></p>
 
       <h2>7. Cambios en esta política</h2>
       <p>Podemos actualizar esta Política de Privacidad. Si hacemos cambios importantes, te lo notificaremos a través de la app o por correo electrónico.</p>

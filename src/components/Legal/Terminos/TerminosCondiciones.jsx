@@ -42,7 +42,7 @@ const TerminosCondiciones = () => {
 
       <h2>9. Contacto</h2>
       <p>Si tienes dudas o consultas sobre estos Términos, puedes escribirnos a:</p>
-      <p>contacto@closyapp.com</p>
+      <p>vestyappes@gmail.com</p>
     </Layout>
   );
 };
